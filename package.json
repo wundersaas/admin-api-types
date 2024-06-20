@@ -1,0 +1,11 @@
+{
+  "name": "admin-api-types",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "bson": "^6.7.0"
+  }
+}
