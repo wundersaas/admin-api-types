@@ -22,6 +22,4 @@ export interface VariantDTO {
   depth: number
   created_at: string | null
   updated_at: string | null
-  created_by: any
-  updated_by: any
 }

@@ -1,4 +1,6 @@
 export { ActivityDTO } from './src/activity'
+export { ArticleDTO } from './src/article'
+export { BlogDTO } from './src/blog'
 export { BrandDTO } from './src/brand'
 export { CategoryDTO, CategoryTreeDTO } from './src/category'
 export { CustomerAddressDTO, CustomerDTO } from './src/customer'

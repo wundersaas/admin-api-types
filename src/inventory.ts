@@ -17,8 +17,6 @@ export interface InventoryDTO {
   image: ImageDTO
   inventory_levels: InventoryLevel[]
   // reserved_quantity: string
-  // created_by: string
-  // updated_by: string
   product: {
     id: string
     title: string
