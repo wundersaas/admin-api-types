@@ -4,6 +4,7 @@ export interface ArticleDTO {
   id: string
   blog_id: string
   title: string
+  active: boolean
   created_at: string
   body_html: string
   author: string
