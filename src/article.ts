@@ -5,17 +5,17 @@ export interface ArticleDTO {
   blog_id: string
   title: string
   active: boolean
-  created_at: string
+  created_at: string | null
   body_html: string
   author: string
   user_id: string
-  published_at: string
-  updated_at: string
+  published_at: string | null
+  updated_at: string | null
   summary_html: string
   template_suffix: string
   handle: string
   tags: string[]
-  image: ImageDTO
+  image: ImageDTO | null
   meta_title: string | null
   meta_keywords: string | null
   meta_description: string | null
