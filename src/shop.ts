@@ -6,7 +6,6 @@ export interface ShopDTO {
   handle: string
   phrase: string
   meta_description: string
-  meta_keywords: string
   domain: string
   ssl: boolean
   theme_id: number

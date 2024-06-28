@@ -17,7 +17,6 @@ export interface CategoryDTO {
   depth: number
   breadcrumb: string | null
   meta_title: string | null
-  meta_keywords: string | null
   meta_description: string | null
   active: boolean
   template_suffix: string | null

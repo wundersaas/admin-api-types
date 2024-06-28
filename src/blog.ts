@@ -5,10 +5,9 @@ export interface BlogDTO {
   title: string
   handle: string
   active: boolean
-  commentable: boolean
+  commentable?: boolean
   template_suffix: string
   meta_title: string | null
-  meta_keywords: string | null
   meta_description: string | null
   tags: string[]
 }
