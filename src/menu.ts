@@ -12,7 +12,6 @@ export interface MenuItemDTO {
   id: string
   nodes: MenuItemDTO[]
   resource_id: string
-  tags: string[]
   title: string
   type: string
   url: string
