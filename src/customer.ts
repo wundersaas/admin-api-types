@@ -1,3 +1,5 @@
+import { MetafieldDTO } from './metafield'
+
 export type CustomerType = 'individual' | 'company'
 
 export interface CustomerDTO {
@@ -18,6 +20,7 @@ export interface CustomerDTO {
   created_at: string | null
   updated_at: string | null
   addresses: CustomerAddressDTO[]
+  metafields: MetafieldDTO[]
 }
 
 export interface CustomerAddressDTO {

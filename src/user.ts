@@ -5,9 +5,8 @@ export interface UserDTO {
   email: string
   phone: string | null
   owner: boolean
-  active: boolean
   bio: string | null
-  permissions: string[]
+  scopes: string[]
   created_at: string | null
   updated_at: string | null
 }
