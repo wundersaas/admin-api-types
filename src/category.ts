@@ -2,7 +2,7 @@ import { ImageDTO } from './image'
 import { MetafieldValueDTO } from './metafield-value'
 
 export interface CategoryTreeDTO extends CategoryDTO {
-  nodes: Partial<CategoryDTO>[]
+  nodes: CategoryTreeDTO[]
 }
 
 export interface CategoryDTO {
