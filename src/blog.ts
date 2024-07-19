@@ -1,3 +1,5 @@
+import { MetafieldValueDTO } from './metafield-value'
+
 export interface BlogDTO {
   id: string
   created_at: string | null
@@ -10,4 +12,5 @@ export interface BlogDTO {
   meta_title: string | null
   meta_description: string | null
   tags: string[]
+  metafields: MetafieldValueDTO[]
 }

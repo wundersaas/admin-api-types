@@ -1,4 +1,5 @@
 import { ImageDTO } from './image'
+import { MetafieldValueDTO } from './metafield-value'
 
 export interface ArticleDTO {
   id: string
@@ -18,4 +19,5 @@ export interface ArticleDTO {
   image: ImageDTO | null
   meta_title: string | null
   meta_description: string | null
+  metafields: MetafieldValueDTO[]
 }
