@@ -1,20 +1,21 @@
 import { ImageDTO } from './image'
+import { MetafieldValueDTO } from './metafield-value'
 import { VariantDTO } from './variant'
 
 export type InventoryPolicyDTO = 'continue' | 'deny'
 export interface ProductImageDTO extends ImageDTO {
   id: string
+  product_id: string
 }
 
 export interface ProductDTO {
   id: string
   brand_id: string | null
   category_ids: string[] | []
-  feature_ids: string[] | []
   title: string
   body_html: string
   handle: string
-  template_suffix: string
+  template_suffix: string | null
   tags: string[]
   active: boolean
   requires_shipping: boolean
@@ -28,7 +29,7 @@ export interface ProductDTO {
   options: OptionDTO[]
   brand: ProductBrandDTO | null
   categories: ProductCategoryDTO[]
-  metafields: MetafieldDTO[]
+  metafields: MetafieldValueDTO[]
 }
 
 type ProductCategoryDTO = {
