@@ -1,7 +1,7 @@
-export interface MetafieldDTO {
+export interface MetafieldOutput {
   id: string
-  created_at: string | null
-  updated_at: string | null
+  createdAt: string | null
+  updatedAt: string | null
   title: string
   resource: 'product' | 'variant' | 'customer' | 'category' | 'page'
   namespace: string
@@ -9,7 +9,7 @@ export interface MetafieldDTO {
   description: string | null
   validations: Record<string, string>[]
   pinned: boolean
-  pinned_position: number | null
+  pinnedPosition: number | null
   list: boolean
   type: TypesDTO
 }

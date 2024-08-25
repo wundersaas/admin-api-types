@@ -1,26 +1,49 @@
-import { ImageDTO } from './image'
-import { MetafieldValueDTO } from './metafield-value'
+import { ImageInput, ImageOutput } from './image'
+import { MetafieldValueOutput } from './metafield-value'
 
-export interface CategoryTreeDTO extends CategoryDTO {
-  nodes: CategoryTreeDTO[]
+export interface CategoryTreeOutput extends CategoryOutput {
+  nodes: CategoryTreeOutput[]
 }
 
-export interface CategoryDTO {
+export interface CategoryOutput {
   id: string
-  parent_id: string | null
+  parentId: string | null
   title: string
   handle: string
-  body_html: string | null
-  image: ImageDTO | null
-  banner: ImageDTO | null
+  bodyHtml: string | null
+  image: ImageOutput | null
+  banner: ImageOutput | null
   position: number
   depth: number
   breadcrumb: string | null
-  meta_title: string | null
-  meta_description: string | null
+  metaTitle: string | null
+  metaDescription: string | null
   active: boolean
-  template_suffix: string | null
-  metafields: MetafieldValueDTO[] | []
-  created_at: string | null
-  updated_at: string | null
+  templateSuffix: string | null
+  metafields: MetafieldValueOutput[] | []
+  createdAt: string | null
+  updatedAt: string | null
+}
+
+export interface CategoryInput {
+  id: string
+  createdAt: Date
+  updatedAt: Date
+  parentId: string | null
+  title: string
+  handle: string
+  bodyHtml: string | null
+  image: ImageInput | null
+  banner: ImageInput | null
+  position: number
+  depth: number
+  metaTitle: string | null
+  metaDescription: string | null
+  active: boolean
+  templateSuffix: string | null
+  metafields: any
+}
+
+export interface CategoryTreeInput extends CategoryInput {
+  items: CategoryTreeInput[]
 }

@@ -1,21 +1,9 @@
-export { ActivityDTO } from './src/activity'
-export { ArticleDTO } from './src/article'
-export { BlogDTO } from './src/blog'
-export { BrandDTO } from './src/brand'
-export { CategoryDTO, CategoryTreeDTO } from './src/category'
-export { CustomerAddressDTO, CustomerDTO } from './src/customer'
-export { ImageDTO } from './src/image'
-export { InventoryDTO } from './src/inventory'
-export { LocationDTO } from './src/location'
-export { MenuDTO, MenuItemDTO } from './src/menu'
-export { MetafieldDTO } from './src/metafield'
-export { PageDTO } from './src/page'
-export { ProductDTO } from './src/product'
-export { RedirectDTO } from './src/redirect'
-export { ResponseList } from './src/response'
-export { ScriptDTO } from './src/script'
-export { ShopDTO } from './src/shop'
-export { UserDTO } from './src/user'
-export { VariantDTO } from './src/variant'
-export { WebhookDTO, WebhookTopicDTO } from './src/webhook'
-export { ZipcodeDTO } from './src/zipcode'
+export { BrandInput, BrandOutput } from './src/brand'
+export {
+  CategoryInput,
+  CategoryOutput,
+  CategoryTreeInput,
+  CategoryTreeOutput
+} from './src/category'
+export { InventoryItemInput, InventoryItemOutput } from './src/inventory-item'
+export { LocationInput, LocationOutput } from './src/location'

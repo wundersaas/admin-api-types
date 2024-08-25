@@ -1,4 +1,12 @@
-export interface MetafieldValueDTO {
+export interface MetafieldValueInput {
+  title: string
+  namespace: string
+  key: string
+  value: string
+  type: MetafieldType
+}
+
+export interface MetafieldValueOutput {
   namespace: string
   key: string
   value: any

@@ -1,7 +1,5 @@
-export interface LocationDTO {
+export interface LocationOutput {
   id: string
-  created_at: string | null
-  updated_at: string | null
   title: string
   active: boolean
   default: boolean
@@ -11,9 +9,28 @@ export interface LocationDTO {
   number: string
   city: string
   country: string
-  country_code: string
+  countryCode: string
   phone: string | null
   province: string
-  province_code: string
+  provinceCode: string
   zipcode: string
+  createdAt: string | null
+  updatedAt: string | null
+}
+
+export interface LocationInput {
+  title: string
+  active?: boolean
+  default?: boolean
+  address1?: string
+  address2?: string
+  neighbourhood?: string
+  number?: string
+  city?: string
+  country?: string
+  countryCode?: string
+  phone?: string | null
+  province?: string | null
+  provinceCode?: string
+  zipcode?: string
 }

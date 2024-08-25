@@ -1,5 +1,5 @@
 import { ImageDTO } from './image'
-import { MetafieldValueDTO } from './metafield-value'
+import { MetafieldValueDTO, MetafieldValueInput } from './metafield-value'
 import { VariantDTO } from './variant'
 
 export type InventoryPolicyDTO = 'continue' | 'deny'
@@ -55,4 +55,59 @@ type MetafieldDTO = {
 type OptionDTO = {
   title: string
   values: string[]
+}
+
+export interface ProductInput {
+  variants: VariantInput[]
+  brand_id: ObjectId | null
+  category_ids: ObjectId[] | []
+  title: string
+  body_html: string
+  handle: string
+  template_suffix: string
+  tags: string[]
+  active: boolean
+  requires_shipping: boolean
+  inventory_policy: InventoryPolicy
+  images: ProductImageInput[] | []
+  image: ProductImageInput | null
+  created_at: Date
+  updated_at: Date
+  published_at: string | null
+  options: ProductOptionInput[]
+  brand: ProductBrandInput | null
+  categories: ProductCategoryInput[]
+  metafields: MetafieldValueInput[]
+}
+
+type InventoryPolicy = 'continue' | 'deny'
+
+type ProductImageInput = {
+  id: string
+  product_id: string
+  src: string
+  alt?: string
+  updated_at?: string
+  created_at?: string
+  position?: number
+  width?: number
+  height?: number
+  type?: string
+  bytes?: number
+}
+
+type ProductOptionInput = {
+  title: string
+  values: string[]
+}
+
+type ProductCategoryInput = {
+  id?: string
+  title?: string
+  google_taxonomy_id?: number
+}
+
+type ProductBrandInput = {
+  id?: string
+  title?: string
 }

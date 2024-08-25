@@ -1,7 +1,7 @@
-export interface RedirectDTO {
+export interface RedirectOutput {
   id: string
   path: string
   target: string
-  created_at: string | null
-  updated_at: string | null
+  createdAt: string | null
+  updatedAt: string | null
 }

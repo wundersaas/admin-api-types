@@ -1,16 +1,16 @@
-import { MetafieldValueDTO } from './metafield-value'
+import { MetafieldValueOutput } from './metafield-value'
 
-export interface BlogDTO {
+export interface BlogOutput {
   id: string
-  created_at: string | null
-  updated_at: string | null
+  createdAt: string | null
+  updatedAt: string | null
   title: string
   handle: string
   active: boolean
   commentable?: boolean
-  template_suffix: string
-  meta_title: string | null
-  meta_description: string | null
+  templateSuffix: string
+  metaTitle: string | null
+  metaDescription: string | null
   tags: string[]
-  metafields: MetafieldValueDTO[]
+  metafields: MetafieldValueOutput[]
 }

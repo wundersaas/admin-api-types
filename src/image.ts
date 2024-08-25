@@ -1,11 +1,16 @@
-export type ImageDTO = {
+export type ImageOutput = {
   src: string
   alt?: string
-  updated_at?: string
-  created_at?: string
+  updatedAt?: string
+  createdAt?: string
   position?: number
   width?: number
   height?: number
   type?: string
   bytes?: number
+}
+
+export type ImageInput = {
+  src: string
+  alt?: string
 }

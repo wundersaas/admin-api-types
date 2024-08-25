@@ -1,19 +1,38 @@
-import { ImageDTO } from './image'
-import { MetafieldValueDTO } from './metafield-value'
+import { ImageOutput } from './image'
+import { MetafieldValueInput, MetafieldValueOutput } from './metafield-value'
 
-export interface BrandDTO {
+type ImageInput = {
+  src: string
+  alt: string
+}
+
+export interface BrandOutput {
   id: string
   title: string
   handle: string
-  body_html: string | null
-  image: ImageDTO | null
-  banner: ImageDTO | null
+  bodyHtml: string | null
+  image: ImageOutput | null
+  banner: ImageOutput | null
   position: number
-  meta_title: string | null
-  meta_description: string | null
+  metaTitle: string | null
+  metaDescription: string | null
   active: boolean
-  template_suffix: string | null
-  created_at: string | null
-  updated_at: string | null
-  metafields: MetafieldValueDTO[] | []
+  templateSuffix: string | null
+  createdAt: string | null
+  updatedAt: string | null
+  metafields: MetafieldValueOutput[] | []
+}
+
+export interface BrandInput {
+  title: string
+  handle: string
+  bodyHtml: string | null
+  image: ImageInput | null
+  banner: ImageInput | null
+  position: number
+  metaTitle: string | null
+  metaDescription: string | null
+  active: boolean
+  templateSuffix: string | null
+  metafields?: MetafieldValueInput[] | []
 }

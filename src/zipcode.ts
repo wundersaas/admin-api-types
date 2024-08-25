@@ -1,9 +1,9 @@
 export interface ZipcodeDTO {
   zipcode: string
-  readonly city: string
-  readonly city_ibge_id: string
-  readonly state: string
-  readonly street: string
-  readonly district: string
-  readonly origin: string
+  city: string
+  cityIbgeId: string
+  state: string
+  street: string
+  district: string
+  origin: string
 }
