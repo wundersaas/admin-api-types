@@ -1,12 +1,25 @@
-export interface UserDTO {
-  id: string
-  first_name: string
-  last_name: string
+type ImageInput = {
+  src: string
+  alt: string
+}
+
+export interface UserInput {
+  firstName: string
+  lastName: string
   email: string
   phone: string | null
-  owner: boolean
   bio: string | null
-  scopes: string[]
-  created_at: string | null
-  updated_at: string | null
+  password: string
+  confirmPassword: string
+}
+
+export interface UserOutput {
+  id: string
+  firstName: string
+  lastName: string
+  email: string
+  phone: string | null
+  bio: string | null
+  createdAt: string | null
+  updatedAt: string | null
 }
