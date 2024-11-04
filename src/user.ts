@@ -12,7 +12,7 @@ export interface UserInput {
   phone?: string | null
   bio?: string | null
   password?: string
-  image?: ImageInput
+  avatar?: ImageInput
   confirmPassword?: string
   language?: string
   timezone?: string
@@ -23,13 +23,13 @@ export interface UserOutput {
   firstName: string
   lastName: string
   email: string
-  phone: string | null
-  bio: string | null
+  phone: string
+  bio: string
   emailVerified: boolean
-  image: ImageOutput
-  passwordUpdatedAt: string | null
+  avatar: ImageOutput
+  passwordUpdatedAt: string
   language?: string
   timezone?: string
-  createdAt: string | null
-  updatedAt: string | null
+  createdAt: string
+  updatedAt: string
 }
